@@ -1,5 +1,5 @@
 const Telegraf = require('telegraf');
-
+console.log("Hi")
 // const mysql = require('mysql');
 
 const bot = new Telegraf('5261842980:AAHxULS79QmLY3kFq759esdQsGEptU5EQyE');
