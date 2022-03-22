@@ -1,5 +1,5 @@
 const Telegraf = require('telegraf');
-console.log("Hi")
+
 // const mysql = require('mysql');
 
 const bot = new Telegraf('5219821536:AAHBdYemdRXvq_sC0Nta8uvs7Mh75tQWEzw');
@@ -35,7 +35,7 @@ const bot = new Telegraf('5219821536:AAHBdYemdRXvq_sC0Nta8uvs7Mh75tQWEzw');
 //starting block
 bot.command('start', ctx => {
     console.log(ctx.from)
-    bot.telegram.sendMessage(ctx.chat.id, 'welcome to eazybite,a simple way to communicate with us and place your orders. How can we help you today?To get stared please type hello.', {
+    bot.telegram.sendMessage(ctx.chat.id, 'Welcome to Kakuu,a simple way to communicate with us and place your orders. How can we help you today?To get stared please type hello.', {
 
     })
 })
@@ -44,7 +44,7 @@ bot.command('start', ctx => {
 
 bot.hears('hello', ctx => {
     console.log(ctx.from)
-    bot.telegram.sendMessage(ctx.chat.id, 'welcome to eazybite, How can we help you today?', {
+    bot.telegram.sendMessage(ctx.chat.id, 'Welcome to Kakuu, How can we help you today?', {
         reply_markup: {
             inline_keyboard: [
                 [
