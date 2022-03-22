@@ -1,0 +1,27 @@
+{
+  "name": "kaku",
+  "version": "1.0.0",
+  "description": "Kaku Group Manager",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alankemboi/Kaku.git"
+  },
+  "keywords": [
+    "Kaku",
+    "BOt"
+  ],
+  "author": "Alan Kemboi",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.32.0"
+  },
+  "bugs": {
+    "url": "https://github.com/alankemboi/Kaku/issues"
+  },
+  "homepage": "https://github.com/alankemboi/Kaku#readme"
+}
