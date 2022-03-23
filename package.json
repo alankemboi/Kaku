@@ -4,7 +4,7 @@
   "description": "Kaku Group Manager",
   "main": "src/index/js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node bot.js",
     "watch": "pm2 start --watch . -n captc src/index.js",
     "lint": "eslint --ext .js -c .eslintrc.yml .",
     "lint:fix": "eslint --ext .js --fix -c .eslintrc.yml .",
