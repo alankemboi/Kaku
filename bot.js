@@ -202,7 +202,10 @@ bot.hears("location", (ctx) => {
     })
 })
 bot.hears('!pin', ctx => {
-    bot.telegram.sendMessage(ctx.chat.id, "Pinned")
+    ctx.reply("Pinned", Extra.markup(Markup.inlineKeyboard(
+        [Markup.urlButton('⌨️ GitHub', 'https://github.com/khuzha/chatadmin')]
+    ))
+        .inReplyTo(ctx.message.message_id).HTML())
 })
 bot.hears('hi', (ctx) => ctx.reply("Hey There!", Extra.inReplyTo(ctx.message.message_id)));
 bot.action('food', ctx => {
