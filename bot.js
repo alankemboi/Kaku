@@ -119,12 +119,7 @@ bot.command('privacy', ctx => {
         }
     })
 })
-bot.command('mute',ctx=>{
-    bot.telegram.sendMessage(ctx.chat.id, Extra.markup(Markup.inlineKeyboard(
-        [Markup.urlButton('⌨️ GitHub', 'https://github.com/khuzha/chatadmin')]
-    ))
-        .inReplyTo(ctx.message.message_id).HTML())
-})
+
 
 bot.hears('hello', ctx => {
     console.log(ctx.from)
