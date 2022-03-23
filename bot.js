@@ -38,15 +38,13 @@ const bot = new Telegraf('5219821536:AAHBdYemdRXvq_sC0Nta8uvs7Mh75tQWEzw');
 //starting block
 bot.command('start', ctx => {
     console.log(ctx.from)
-    ctx.reply('Hey there! My name is Kaku - I\'m here to help you mange your groups!\nHit /help to find out more about how to use me to full potential. \n\nJoin my news channel to information on all latest updates. \n\n Use /privacy command to view the privacy policy, and interact with you data.\n\nAuthor:@kmalan', Extra.markup(Markup.inlineKeyboard(
+    ctx.replyWithMarkdown('Hey there! My name is Kaku - I\'m here to help you mange your groups!\nHit /help to find out more about how to use me to full potential. \n\nJoin my [news channel](https://www.github.com/alankemboi) to information on all latest updates. \n\n Use /privacy command to view the privacy policy, and interact with you data.\n\nAuthor:@kmalan', Extra.markup(Markup.inlineKeyboard(
         [Markup.urlButton('Add me to chat!', 'https://t.me')]
     )).HTML())
 })
-bot.command('link', ctx => {
-    ctx.replyWithMarkdown("[here](https://www.paypal.com)")
-})
+
 bot.command('donate', ctx => {
-    ctx.reply('So you want to donate? Amazing! It took alot of work for my creator to get me where I am now - so if you have some money to spare, and want to show your support; Donate! After all, server fees dont pay themselves - so every little helps! All donation money goes straight to funding the VPS, and of course boosting morale - always nice to see my work appreciated:)\n\nYou can donate on M-PESA here,\nor PAYPAL ,<a>here</a>.\n\nIf you want tp help support me monthly basis,you can set up recurring donation on Github Sponsors.\n\nThank you for your generosity!')
+    ctx.replyWithMarkdown('So you want to donate? Amazing! It took alot of work for my creator to get me where I am now - so if you have some money to spare, and want to show your support; Donate! After all, server fees dont pay themselves - so every little helps! All donation money goes straight to funding the VPS, and of course boosting morale - always nice to see my work appreciated:)\n\nYou can donate on M-PESA [here](https://www.github.com/alankemboi),\nor PAYPAL ,[here](https://www.paypal.com).\n\nIf you want tp help support me monthly basis,you can set up recurring donation on [Github Sponsors](https://www.github.com/alankemboi).\n\nThank you for your generosity!')
 })
 bot.command('help', ctx => {
     bot.telegram.sendMessage(ctx.chat.id, 'Help\n\nHey there! My name is Kaku. I\'m a group manager bot ,here to help you get around and keep the order in you groups!\nI have lots ofhandy features such as flood control, a warnig system, a note keeping system, and even predetermined replies on certain keywords.\n\n**Helpful commands**\n-/start:Start me! You\'ve probably already used this.\n-/help:Sends this message;I\'ll tell you more about myself!\n/donate:Gives you info on how to support me and my creator.\n\nIf you have any bugs or questions on how to use me have a look at my website, or head to @KakuSupportChannel.\nAll commands can be used with following:/!', {
