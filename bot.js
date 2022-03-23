@@ -38,7 +38,7 @@ const bot = new Telegraf('5219821536:AAHBdYemdRXvq_sC0Nta8uvs7Mh75tQWEzw');
 //starting block
 bot.command('start', ctx => {
     console.log(ctx.from)
-    ctx.reply('Hey there! My name is Kaku - I\'m here to help you mange your groups!\nHit /help to find out more about how to use me to full potential. \n\nJoin my news channel to information on all latest updates. \n\n Use /privacy command to view the privacy policy, and interact with you data.', Extra.markup(Markup.inlineKeyboard(
+    ctx.reply('Hey there! My name is Kaku - I\'m here to help you mange your groups!\nHit /help to find out more about how to use me to full potential. \n\nJoin my news channel to information on all latest updates. \n\n Use /privacy command to view the privacy policy, and interact with you data.\n\nAuthor:@kmalan', Extra.markup(Markup.inlineKeyboard(
         [Markup.urlButton('Add me to chat!', 'https://t.me')]
     )).HTML())
 })
