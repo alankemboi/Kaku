@@ -49,7 +49,24 @@ bot.command('help', ctx => {
     bot.telegram.sendMessage(ctx.chat.id, 'Help\n\nHey there! My name is Kaku. I\'m a group manager bot ,here to help you get around and keep the order in you groups!\nI have lots ofhandy features such as flood control, a warnig system, a note keeping system, and even predetermined replies on certain keywords.\n\n**Helpful commands**\n-/start:Start me! You\'ve probably already used this.\n-/help:Sends this message;I\'ll tell you more about myself!\n/donate:Gives you info on how to support me and my creator.\n\nIf you have any bugs or questions on how to use me have a look at my website, or head to @KakuSupportChannel.\nAll commands can be used with following:/!')
 })
 
-
+bot.command('privacy', ctx => {
+    bot.telegram.sendMessage(ctx.chat.id, 'Select one of the bellow options for more information about how the bot handles your privacy.', {
+        reply_markup: {
+            inline_keyboard: [
+                [
+                    { text: 'Privacy Policy', callback_data: 'orders' },
+                ],
+                [
+                    { text: 'Retrieve Data', callback_data: 'orders' },
+                    { text: 'Delete Data', callback_data: 'orders' },
+                ],
+                [
+                    { text: 'Cancel', callback_data: 'orders' },
+                ],
+            ]
+        }
+    })
+})
 
 bot.hears('hello', ctx => {
     console.log(ctx.from)
