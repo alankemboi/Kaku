@@ -1,8 +1,8 @@
 {
-  "name": "kaku",
-  "version": "1.0.0",
-  "description": "Kaku Group Manager",
-  "main": "src/index/js",
+  "name": "captcha_only_bot",
+  "version": "0.1.0",
+  "description": "Bot admin captcha",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "watch": "pm2 start --watch . -n captc src/index.js",
@@ -14,16 +14,12 @@
     "migrate:down": "knex migrate:rollback",
     "migrate:refresh": "knex migrate:rollback && knex migrate:latest"
   },
+  "author": "Denis Efremov <efremov.a.denis@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alankemboi/Kaku.git"
+    "url": "git@github.com:Piterden/captcha_only_bot.git"
   },
-  "keywords": [
-    "Kaku",
-    "Bot"
-  ],
-  "author": "Alan Kemboi",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "knex": "^0.19.5",
@@ -50,9 +46,5 @@
     "hooks": {
       "pre-push": "npm run lint"
     }
-  },
-  "bugs": {
-    "url": "https://github.com/alankemboi/Kaku/issues"
-  },
-  "homepage": "https://github.com/alankemboi/Kaku#readme"
+  }
 }
