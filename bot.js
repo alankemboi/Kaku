@@ -39,9 +39,8 @@ const bot = new Telegraf('5219821536:AAHBdYemdRXvq_sC0Nta8uvs7Mh75tQWEzw');
 bot.command('start', ctx => {
     console.log(ctx.from)
     ctx.reply('Hey there! My name is Kaku - I\'m here to help you mange your groups!\nHit /help to find out more about how to use me to full potential. \n\nJoin my news channel to information on all latest updates. \n\n Use /privacy command to view the privacy policy, and interact with you data.', Extra.markup(Markup.inlineKeyboard(
-        [Markup.urlButton('Add me to chat😊', 'https://t.me')]
-    ))
-        .inReplyTo(ctx.message.message_id).HTML())
+        [Markup.urlButton('Add me to chat!', 'https://t.me')]
+    )).HTML())
 })
 bot.command('donate', ctx => {
     ctx.reply('So you want to donate? Amazing! It took alot of work for my creator to get me where I am now - so if you have some money to spare, and want to show your support; Donate! After all, server fees dont pay themselves - so every little helps! All donation money goes straight to funding the VPS, and of course boosting morale - always nice to see my work appreciated:)\n\nYou can donate on M-PESA here,\nor PAYPAL ,<a>here</a>.\n\nIf you want tp help support me monthly basis,you can set up recurring donation on Github Sponsors.\n\nThank you for your generosity!')
