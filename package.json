@@ -18,7 +18,7 @@
   "author": "Alan Kemboi",
   "license": "ISC",
   "dependencies": {
-    "telegraf": "^3.32.0"
+    "telegraf": "^4.7.0"
   },
   "bugs": {
     "url": "https://github.com/alankemboi/Kaku/issues"
