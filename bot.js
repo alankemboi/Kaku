@@ -51,7 +51,7 @@ bot.command('donate', ctx => {
     })
 })
 bot.command('help', ctx => {
-    bot.telegram.sendMessage(ctx.chat.id, 'Help\n\nHey there! My name is Kaku. I\'m a group manager bot ,here to help you get around and keep the order in you groups!\nI have lots of handy features such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.\n\n**Helpful commands**\n-/start:Start me! You\'ve probably already used this.\n-/help:Sends this message;I\'ll tell you more about myself!\n/donate:Gives you info on how to support me and my creator.\n\nIf you have any bugs or questions on how to use me have a look at my website, or head to @KakuSupportChannel.\nAll commands can be used with following:/!', {
+    bot.telegram.sendMessage(ctx.chat.id, 'Help\n\nHey there! My name is Kaku. I\'m a group manager bot ,here to help you get around and keep the order in you groups!\nI have lots of handy features such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.\n\n**Helpful commands**\n-/start: Start me! You\'ve probably already used this.\n-/help: Sends this message; I\'ll tell you more about myself!\n/donate: Gives you info on how to support me and my creator.\n\nIf you have any bugs or questions on how to use me have a look at my website, or head to @KakuSupportChannel.\nAll commands can be used with following:/!', {
         reply_markup: {
             inline_keyboard: [
                 [
