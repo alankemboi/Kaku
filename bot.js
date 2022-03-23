@@ -1,4 +1,5 @@
 const Telegraf = require('telegraf');
+const Extra = require('telegraf/extra')
 
 
 // const mysql = require('mysql');
@@ -198,6 +199,9 @@ bot.hears("location", (ctx) => {
             ]
         }
     })
+})
+bot.hears('!pin', ctx => {
+    ctx.reply("Pinned", Extra.inReplyTo(ctx.message.message_id))
 })
 
 bot.action('food', ctx => {
