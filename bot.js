@@ -42,9 +42,13 @@ bot.command('start', ctx => {
         [Markup.urlButton('Add me to chat!', 'https://t.me')]
     )).HTML())
 })
-bot.command('link', ctx => {
-    const text = '[Link here](href="https://www.paypal.com)';
+bot.command('link1', ctx => {
+    const text = '[](https://www.paypal.com)';
     ctx.reply(text, parse_mode = 'MarkdownV2')
+})
+bot.command('link2', ctx => {
+    const text = '<a href="https://www.paypal.com">LINK HERE</a>';
+    ctx.reply(text, parse_mode = 'HTML')
 })
 bot.command('donate', ctx => {
     ctx.reply('So you want to donate? Amazing! It took alot of work for my creator to get me where I am now - so if you have some money to spare, and want to show your support; Donate! After all, server fees dont pay themselves - so every little helps! All donation money goes straight to funding the VPS, and of course boosting morale - always nice to see my work appreciated:)\n\nYou can donate on M-PESA here,\nor PAYPAL ,<a>here</a>.\n\nIf you want tp help support me monthly basis,you can set up recurring donation on Github Sponsors.\n\nThank you for your generosity!')
