@@ -43,7 +43,7 @@ bot.command('start', ctx => {
     )).HTML())
 })
 bot.command('link1', ctx => {
-    const text = '[link here](https://www.paypal.com/)  *bold \*text* ||Spooiler||';
+    const text = `[link here](https://www.paypal.com/)  *bold \*text* ||Spooiler||`;
     ctx.reply(text, parse_mode = 'MarkdownV2')
 })
 bot.command('link2', ctx => {
