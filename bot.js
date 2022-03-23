@@ -204,7 +204,7 @@ bot.hears("location", (ctx) => {
 bot.hears('!pin', ctx => {
     bot.telegram.sendMessage(ctx.chat.id, "Pinned")
 })
-bot.hears('hi', (ctx) => ctx.reply( "Hey There!"))
+bot.hears('hi', (ctx) => ctx.reply("Hey There!", Extra.inReplyTo(ctx.message.message_id)));
 bot.action('food', ctx => {
     bot.telegram.sendPhoto(ctx.chat.id, { source: "res/food.png" })
 
