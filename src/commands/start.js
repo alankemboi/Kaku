@@ -10,7 +10,7 @@ Add me to your chat and give me admin rights.
 I will show a captcha message to each newcomer to your chat.
 Also you can edit messages and a bit of my behavior with /settings command in a chat where you are admin.
 
-Created by @kmalan`, parse_mode = "Markdown")
+Created by @kmalan`, parse_mode = "MarkdownV2")
       .catch(errorHandler)
   }
 }
