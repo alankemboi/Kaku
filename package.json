@@ -32,8 +32,8 @@
     "telegraf": "^3.3.0"
   },
   "devDependencies": {
-    "@atomix/eslint-config": "^8.0.0",
-    "eslint": "^5.16.0",
+    "@atomix/eslint-config": "^6.3.0",
+    "eslint": "^8.11.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-prettier": "^4.0.0",
