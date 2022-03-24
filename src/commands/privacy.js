@@ -1,3 +1,6 @@
+const Extra = require('telegraf/extra')
+const Markup = require('telegraf/markup')
+
 const { errorHandler, debug, defaultConfig } = require('@/helpers')
 modules.exports = () => async (ctx) => {
     ctx.reply('Select one of the bellow options for more information about how the bot handles your privacy.', {
