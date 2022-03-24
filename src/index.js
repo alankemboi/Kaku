@@ -7,7 +7,7 @@ const Telegraf = require('telegraf')
 const knexConfig = require('../knexfile')
 const { errorHandler } = require('./helpers')
 const { userMiddleware } = require('./middlewares')
-const { startCommand, helpCommand, settingsCommand } = require('./commands')
+const { startCommand, helpCommand, donateCommand, privacyCommand, settingsCommand } = require('./commands')
 const { passAction, actionsAction, editSettingAction } = require('./actions')
 const {
   hearsHandler,
@@ -48,6 +48,8 @@ const init = async (bot, dbConfig) => {
   bot.start(startCommand())
   bot.command('settings', settingsCommand())
   bot.command('help', helpCommand())
+  bot.command('donate', donateCommand())
+  bot.command('privacy', privacyCommand())
 
   return bot
 }
