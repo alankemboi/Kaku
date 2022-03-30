@@ -46,11 +46,6 @@
   "_moduleAliases": {
     "@": "./src"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint"
-    }
-  },
   "bugs": {
     "url": "https://github.com/alankemboi/Kaku/issues"
   },
